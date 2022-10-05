@@ -41,10 +41,12 @@ public class Main {
   //method counting numbers of string in List of Strings
   public static int countOccurrence(List<Object> arrayList, Object object) {
     int result = 0;
-    if (object != null || arrayList != null) {
-      for (Object s : arrayList) {
-        if (Objects.equals(s, object)) {
-          result++;
+    if (object != null) {
+      if (arrayList != null) {
+        for (Object s : arrayList) {
+          if (Objects.equals(s, object)) {
+            result++;
+          }
         }
       }
     }
