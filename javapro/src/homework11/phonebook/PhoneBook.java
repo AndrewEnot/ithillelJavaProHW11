@@ -1,6 +1,7 @@
 package homework11.phonebook;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PhoneBook {
 
@@ -28,8 +29,8 @@ public class PhoneBook {
   }
 
   //this method find all records with same name in PhoneBook
-  public ArrayList<Record> findAll(String string) {
-    ArrayList<Record> recordArrayList = new ArrayList<>();
+  public List<Record> findAll(String string) {
+    List<Record> recordArrayList = new ArrayList<>();
     if (string != null) {
       for (Record record : records) {
         if (record.getName().equals(string)) {
@@ -47,7 +48,7 @@ public class PhoneBook {
   }
 
   //this method prints all information about all Records from list of Records
-  public void printPhones(ArrayList<Record> records) {
+  public void printPhones(List<Record> records) {
     assert records != null;
     for (Record record : records) {
       print(record);
